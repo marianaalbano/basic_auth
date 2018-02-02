@@ -1,0 +1,6 @@
+mail:
+  user: 'mariana.albano95@gmail.com'
+  password: '2282621m'
+  server: smtp.gmail.com
+  port: 587
+  env: prod
