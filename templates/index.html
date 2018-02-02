@@ -1,0 +1,91 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+    <meta name="description" content="">
+    <meta name="author" content="">
+    <link rel="icon" href="../../../../favicon.ico">
+
+    <title>Pricing example for Bootstrap</title>
+
+    <!-- Bootstrap core CSS -->
+    <link href="/static/dist/css/bootstrap.min.css" rel="stylesheet">
+
+    <!-- Custom styles for this template -->
+    <link href="/static/auth.css" rel="stylesheet">
+  </head>
+
+  <body>
+
+   
+
+    <div class="pricing-header px-3 py-3 pt-md-5 pb-md-4 mx-auto text-center">
+      <h1 class="display-5">Selecione a opção</h1>
+      <p class="lead">Este é um sistema básico para adicionar, fazer a autenticação de usuários e realizar a troca de senha para o primeiro acesso.</p>
+    </div>
+
+    <div class="container">
+      <div class="card-deck mb-2 text-center">
+        <div class="card mb-5 box-shadow">
+          <div class="card-header">
+            <h4 class="my-0 font-weight-normal">Adicionar usuários</h4>
+          </div>
+          <div class="card-body">
+            <ul class="list-unstyled mt-3 mb-4">
+              <li>Para adicionar usuários</li>
+              <li>deve ser realizado o upload</li>
+              <li>de um arquivo do tipo CSV.</li>
+              <li><font size="1">As informações de usuários dentro do arquivo</li>
+                <li> devem ser separadas por vírgula (,)</font></li>
+            </ul>
+            <form action="/upload" method="POST" enctype="multipart/form-data">
+              <input name="file" type="file" accept=".csv">
+              <input name="submit" type="submit">
+            </form>
+          </div>
+        </div>
+        
+        <div class="card mb-5 box-shadow">
+          <div class="card-header">
+            <h4 class="my-0 font-weight-normal">Acessar sistema</h4>
+          </div>
+          <div class="card-body">
+            <ul class="list-unstyled mt-3 mb-4">
+              <li>Usuários que fizerem login</li>
+              <li>pela primeira vez devem</li>
+              <li>alterar a sua senha.</li>
+              <li><font size="1">Utilize sempre uma senha segura contendo:</li> 
+                <li>números, letras e caracteres especiais</font></li>
+            </ul>
+            <button type="button" class="btn btn-lg btn-default">Login</button>
+          </div>
+        </div>
+      </div>
+
+      <footer class="pt-4 my-md-5 pt-md-5 border-top">
+        <div class="row">
+          <div class="col-12 col-md">
+              <footer class="footer text-center"> 2018 &copy; Mariana Albano</footer>          </div>
+        </div>
+      </footer>
+    </div>
+
+
+    <!-- Bootstrap core JavaScript
+    ================================================== -->
+    <!-- Placed at the end of the document so the pages load faster -->
+    <script src="https://code.jquery.com/jquery-3.2.1.slim.min.js" integrity="sha384-KJ3o2DKtIkvYIK3UENzmM7KCkRr/rE9/Qpg6aAZGJwFDMVNA/GpGFF93hXpG5KkN" crossorigin="anonymous"></script>
+    <script>window.jQuery || document.write('<script src="/static/assets/js/vendor/jquery-slim.min.js"><\/script>')</script>
+    <script src="/static/assets/js/vendor/popper.min.js"></script>
+    <script src="/static/dist/js/bootstrap.min.js"></script>
+    <script src="/static/assets/js/vendor/holder.min.js"></script>
+    <script>
+      Holder.addTheme('thumb', {
+        bg: '#55595c',
+        fg: '#eceeef',
+        text: 'Thumbnail'
+      });
+    </script>
+  </body>
+</html>
